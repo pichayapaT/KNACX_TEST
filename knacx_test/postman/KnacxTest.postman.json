@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "61972aec-4068-40e8-93b2-35947511d24f",
+		"name": "KnacxTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "READ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/rCovid19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"rCovid19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ/Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/rCovid19/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"rCovid19",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"fname\": \"pichayapa\",\r\n    \"lname\": \"tochuendee\",\r\n    \"tel\": \"0869071013\",\r\n    \"addr\": \"38749 ถ.อิสรภาพ แขวงหิรัญรูจี เขตธนบุรี กทม. 10600\",\r\n    \"note\": \"มีไข้สูง เจ็บคอ\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/cCovid19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"cCovid19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"fname\": \"Ai\",\r\n    \"lname\": \"tochuendee\",\r\n    \"tel\": \"0869041513\",\r\n    \"addr\": \"38749 ซ.อิสรภาพ15 ถ.อิสรภาพ แขวงหิรัญรูจี เขตธนบุรี กทม. 10600\",\r\n    \"note\": \"มีไข้สูง เจ็บคอ น้ำมูก\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/uCovid19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"uCovid19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/dCovid19/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"dCovid19",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
